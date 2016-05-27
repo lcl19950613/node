@@ -23,6 +23,7 @@ var res = require('./require.js');  // 这个方法有个返回值，就是这�
 
 // 查看这个模块下面的module对象
    console.log( res );
+   console.log( module );
 
 
 

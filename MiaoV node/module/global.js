@@ -16,4 +16,4 @@ setTimeout(function(){
 
 //process
  //console.log(global.process);
-console.log( EventEmitter)
+//console.log( EventEmitter)

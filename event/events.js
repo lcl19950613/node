@@ -2,7 +2,7 @@ var EventEmitter = require('events').EventEmitter;
 
 var life  = new EventEmitter();
 
-// addEventListener == on;
+// addListener == on;
 // 官方建议对一个事件设置最多不要超过十个监听器
 
 // 可以手动的设置最大的监听数量，就不会再报错  
