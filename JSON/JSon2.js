@@ -19,7 +19,7 @@ console.log( typeof JSON.parse(str) );
 var  a = {a:1,b:2};
 console.log( typeof JSON.stringify(a) );
 
-
-
+var arr = ['anikin','jack','rose'];
+console.log( typeof JSON.stringify(arr) );
 
 
