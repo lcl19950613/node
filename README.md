@@ -8,4 +8,5 @@ learn node's repository
 		<li><a href="javascript:;">包的学习</a></li>
 		<li><a href="javascript:;">应用开发</a></li>
 		<li><a href="javascript:;">学会开源</a></li>
-	</ul>
+</ul>
+<img src="http://linux.it.net.cn/uploads/allimg/150219/14004C625-0.jpg?2015029135438" />
