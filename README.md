@@ -9,4 +9,6 @@ learn node's repository
 		<li><a href="javascript:;">应用开发</a></li>
 		<li><a href="javascript:;">学会开源</a></li>
 </ul>
-<img src="http://linux.it.net.cn/uploads/allimg/150219/14004C625-0.jpg?2015029135438" />
+<p><img src="http://linux.it.net.cn/uploads/allimg/150219/14004C625-0.jpg?2015029135438" /></p>
+<br/>
+<p><img src="http://static.open-open.com/lib/uploadImg/20150402/20150402105345_812.png"/></p>
