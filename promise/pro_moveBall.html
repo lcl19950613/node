@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="Zh-en">
+    <meta charset="UTF-8">
+    <style>
+        *{margin:0;padding:0;}
+        div{ width:50px;height:50px; border-radius: 100%; background: red;text-align: center;line-height: 50px;margin-left:10px;margin-top: 10px;;
+            color: #fff;}
+    </style>
+    <title>Promise在浏览器中的应用</title>
+    <script src="node_modules/bluebird/js/browser/bluebird.min.js"></script>
+
+</head>
+<body>
+
+
+<div style="margin-left: 10px;">1</div>
+<div style="margin-left: 10px;">2</div>
+<div style="margin-left: 10px;">3</div>
+<script>
+
+       // 测试： 在浏览器端兼容到ie9 所以pc基本可以不用考虑
+
+        var oDiv = document.querySelectorAll('div');
+        // 可以拿到这个全局的Promise变量
+        var Promise = window.Promise;
+        function PromiseAnimation(ball,distance){
+            return new Promise(function( resolve, reject ){
+                function __moveTo(){
+                    ball.timer = setInterval(function(){
+                        var L = parseInt( ball.style.marginLeft );
+                        if( L==distance ){
+                            resolve();
+                            clearInterval(ball.timer);
+                        }else{
+                            if( L<distance ){
+                                L++
+                            }else{
+                                L--
+                            }
+                            ball.style.marginLeft = L + 'px';
+                        }
+                    },13);
+                }
+                __moveTo();  // 启动第一次的调用在内部
+            })
+        }
+
+
+        // 实现了线性的回调
+        PromiseAnimation( oDiv[0],300)
+                .then(function(){
+                    return  PromiseAnimation( oDiv[1],300)
+                })
+                .then(function(){
+                    return  PromiseAnimation( oDiv[2],300)
+                })
+
+
+</script>
+</body>
+</html>
