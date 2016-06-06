@@ -1,4 +1,4 @@
-/**
+ /**
  * Created by Anikin on 2016/5/8.
  */
 var a  = new Buffer(10);  //分配了10长度的大小，其长度是固定的，不能更改。
