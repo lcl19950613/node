@@ -6,7 +6,7 @@ learn node's repository
 		<li>
 		　　<a href="javascript:;">API的学习</a>
 		    <ul>
-		      <li><a href="http://www.tuicool.com/articles/rIZBvq">Buffer</a></li>
+		      <li><a href="http://www.tuicool.com/articles/rIZBvq" target="_blank">Buffer</a></li>
 		    </ul/>
 		</li>
 		<li><a href="javascript:;">模块的学习</a></li>
