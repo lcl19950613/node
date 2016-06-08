@@ -26,6 +26,13 @@ learn node's repository
 		   </ul>           
 		
 		</li>
+		<li><a href="javascript:;">先关学习路径</a>
+		    <ul>
+		       <li><a href="http://nqdeng.github.io/7-days-nodejs/">七天学会</a></li>
+               <li><a href="http://www.gbtags.com/technology/javautilities/20120904-node-js-for-beginners/">好的开始</a></li>
+               <li><a href="https://github.com/alsotang/node-lessons">开元博客</a></li>
+		    </ul>
+		</li>
 </ul>
 <p><img src="http://linux.it.net.cn/uploads/allimg/150219/14004C625-0.jpg?2015029135438" /></p>
 <br/>
