@@ -22,6 +22,7 @@ learn node's repository
               <li><a href="javascript:;">backbone：客户端MVC框架，编写客户端应用（豆瓣说）</a></li>
               <li><a href="javascript:;">coffeescript：提高JavaScript的可读性，健壮性</a></li>
               <li><a href="javascript:;">zombie：浏览器子集，编写html解析器，轻形javascript客户端测试</a></li>
+              <li><a href="http://www.cnblogs.com/aaronjs/p/3745218.html">supervisor 提高开发的效率，不需要一直的重启服务！</a></li>
          
 		   </ul>           
 		
