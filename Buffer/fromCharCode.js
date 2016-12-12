@@ -25,7 +25,7 @@ consoleIndex(str,'i');
 
 function consoleIndex(str,n){
     console.log( n+'的位置是：'+ str.indexOf(n)  );
-    console.log( n+'的Unicode的编码：'+ str.charCodeAt( str.indexOf(n) ) );
+    console.log( n+'的Ascii的编码：'+ str.charCodeAt( str.indexOf(n) ) );  // 这个是ascill编码的转化
 }
 
 
