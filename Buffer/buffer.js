@@ -1,5 +1,21 @@
  /**
  * Created by Anikin on 2016/5/8.
+ 
+/*
+   buf.length    //buf长度，就是在内存中存放的大小。
+*  buf.write()
+*  buf.toString()
+*  buf.toJson()
+*  buf1.compare(buf2) 返回值是-1 0 1
+*  buf1.copy(buf2)  将buf1拷贝到buf2中
+*  buf1.slice(start,end)
+*
+*  Buffer.isBuffer(obj)
+*  Buffer.concat([buf1,buf2])
+*  Buffer.isEncoding(encoding)
+*  Buffer.byteLength(string, [encoding])
+*
+* */
  */
 var a  = new Buffer(10);  //分配了10长度的大小，其长度是固定的，不能更改。
 
