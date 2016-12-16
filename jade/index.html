@@ -1,0 +1,53 @@
+<!DOCTYPE html><!--[if IE 7]><html class="ie8"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>jade test ANIKIN</title>
+  <link href="style.css" rel="stylesheet" style="text/css">
+  <style>body{color:#333; line-height: 40px;}</style>
+  <script>var name="anikin";</script>
+</head>
+<body>
+  <h1 id="title" class="title">hello wolld!22</h1>
+  <div id="wrap" class="wrap">文字后面空一格 jade也是支持原生的标签写法
+    <!-- div.inner  缓冲注释  注释ie浏览器兼容性注释的时候要加</html>的闭合标签，同时页面代码还要缩进一格-->
+  </div><a data-name="anikin" data-age='23' href="http://www.baidu.com/">baidu 自身的属性使用括号包起来</a>
+  <input type="text" value="jade" name="anikin">
+  <!--input(value=charsetds)  charsetds是个不存在的变量，这样子就不会是undefined 而是空-->
+  <p>
+    1. aaaa <b>text</b>
+    2. bbbb<strong>BBBBBB</strong>3. cccc
+    4. dddd
+  </p>
+  <p>
+    Jade is a terse and simple
+    templating language with a
+    strong focus on performance
+    and powerful features.
+    
+  </p>
+  <div>jdad  安全转移</div>
+  <div>&lt;script&gt;alert(1)&lt;/script&gt;;&lt;span&gt;span&lt;/span&gt;  等同于 =</div>
+  <div><script>alert(1)</script>;<span>span</span>  等同于 !=</div>
+  <div>!{dataHtml}  输出自身</div>
+  <h1>流程相关的部分  jade 支持js原生代码，因此页面上的值都可以使用js进行操作 也支持each 语法糖,也可以轮训数组</h1>
+  <p>anikin</p>
+  <p>higher</p>
+  <p>author : anikin</p>
+  <p>level : higher</p>
+  <!-- each前面的-可写可不写-->
+  <p>111</p>
+  <p>222</p>
+  <p>3333</p>
+  <p>444</p>
+  <!-- 多层次 深层的循环-->
+  <dl>20114850</dl>
+  <dd>仇彦龙</dd>
+  <dd>男</dd>
+  <dl>20114848</dl>
+  <dd>小吴</dd>
+  <dd>男</dd>
+  <h1>流程 控制 while</h1>
+  <ul></ul>
+</body></html>

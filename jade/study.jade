@@ -1,0 +1,43 @@
+doctype html
+
+head
+    meta(charset='utf-8')
+    title jade test
+    link(href="style.css",rel="stylesheet",style="text/css")
+    script.
+    var name = "anikin";
+
+body
+
+    h1 流程控制语句 while if-else unless switch
+    - var n = 0
+    ul
+      while n < 4
+        li= n++
+
+    - var isImooc = true
+    - var lessons = ['jade','node','express']
+    if isImooc
+      if lessons.length >2
+        p #{lessons.join()}
+      else if lessons>1
+        p #{lessons.join()}
+      else
+        p no lesson
+    else
+      p no Imooc
+
+
+     h5 case == switch的实现是通过case-when实现的
+     - var name = 'anikin'
+     case name
+       when 'jack'
+         p= jack
+       when 'rose'
+         p= rose
+       when 'anikin'
+         p #{name}
+       default p hi no name
+
+</html>
+

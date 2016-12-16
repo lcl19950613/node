@@ -1,0 +1,4 @@
+*{margin:0; padding: 0;}
+.ie8 body{ color:red!important; background:red; }
+.ie9 body{ color: green!important; background:green;}
+.wrap{ width:120px; height:120px; border:1px solid red; }

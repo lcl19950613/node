@@ -1,0 +1,52 @@
+doctype html
+
+head
+    meta(charset='utf-8')
+    title jade test
+    link(href="style.css",rel="stylesheet",style="text/css")
+    script.
+    var name = "anikin";
+
+body
+
+    h1 mixin jade的代码块复用的  在编译的时候会被转化成普通js函数
+
+    mixin lesson
+      p hello jade template--no argumens
+
+    +lesson
+
+    mixin study(name,courses)
+      p #{name} mixin
+      ul.course
+        each course in courses
+          li= course
+
+    +study('qiuyanlong',['php','nodejs','mongodb','mysql'])
+
+
+
+
+    mixin group(student)
+      p study name is #{student.name}  mixin之间的嵌套
+      +study(student.name,student.course)
+    +group({name:'anikin',course:[111,222,333]})
+
+
+
+
+
+    h5 mixin 的强大功能内联代码块
+    mixin team(slogon)
+      h4 #{slogon}
+      if block
+         block
+      else
+         no team
+    +team('slogon')
+      p Good job 这个参数就传入team里面了
+
+
+
+</html>
+

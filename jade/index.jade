@@ -1,0 +1,65 @@
+doctype html
+<!--[if IE 7]><html class="ie8"><![endif]-->
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if IE 9]><html class="ie9"><![endif]-->
+head
+    meta(charset='utf-8')
+    - var course="anikin"    //变量  使用方式 #{}  一般在页面中不定义 可以是命令行或者json【编译 -O】文件中传递过来的变量 优先级由内向外
+    - var data="jdad"
+    - var dataHtml = '<script>alert(1)</script>;<span>span</span>'
+    title jade test #{course.toUpperCase()}
+    link(href="style.css",rel="stylesheet",style="text/css")
+    style.
+      body{color:#333; line-height: 40px;}
+    script.
+      var name="anikin";
+body
+
+    h1#title.title hello wolld!22
+    #wrap.wrap 文字后面空一格 jade也是支持原生的标签写法
+     // div.inner  缓冲注释  注释ie浏览器兼容性注释的时候要加</html>的闭合标签，同时页面代码还要缩进一格
+    a(data-name='anikin',data-age=23,href="http://www.baidu.com/") baidu 自身的属性使用括号包起来
+    input(type="text",value="jade",name="anikin")
+    //-input(type="checkbox",name="check" checked)  非缓冲注释
+    //input(value=charsetds)  charsetds是个不存在的变量，这样子就不会是undefined 而是空
+    p
+     |1. aaaa <b>text</b>
+     |2. bbbb
+     strong BBBBBB
+     |3. cccc
+     |4. dddd
+
+    p.
+     Jade is a terse and simple
+     templating language with a
+     strong focus on performance
+     and powerful features.
+
+    div #{data}  安全转移
+    div #{dataHtml}  等同于 =
+    div !{dataHtml}  等同于 !=
+    div \!{dataHtml}  输出自身
+
+    h1 流程相关的部分  jade 支持js原生代码，因此页面上的值都可以使用js进行操作 也支持each 语法糖,也可以轮训数组
+
+    - var courseAll = { author:'anikin' ,level: 'higher'}
+    - for (var k in courseAll)
+      p= courseAll[k]
+
+    - each value,key in courseAll
+      p #{key} : #{value}
+
+    // each前面的-可写可不写
+    - var courseArray = ['111','222','3333','444']
+    each item in  courseArray
+      p #{item}
+
+    // 多层次 深层的循环
+    - var sections = [{id: 20114850, items:['仇彦龙','男']},{id:20114848 , items:['小吴','男']}]
+    each section in sections
+      dl= section.id
+      each sec in section.items
+        dd= sec
+
+
+</html>
