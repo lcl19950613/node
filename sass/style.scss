@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import "resent.css"; // 采用原生css中的 @import 也可以是@import url() 在线的库
+@import "setHeight";  // less内部的 @import
+
+// 使用
+.wrap{
+  border: $linghe-color-border;
+  width: $width_2;
+  height: $height_2;
+
+  .inner{
+    width:$width_1;
+    height: $height_1;
+    border: $linghe-color-border;
+  }
+  .small{
+     border: $linghe-color-border;
+     width:$width_0;
+     height:$height_0;
+  }
+  .ahove{
+     color:#ccc;
+     //&:hover{ color:red; } //  父标签
+     //@include link-colors(blue, red, green);
+     // 传递参数的情况
+     @include link-colors(
+            $normal: blue,
+            $visited: green,
+            $hover: red
+     );
+  }
+}
+
+// 群组选择器的嵌套
+.container{
+  $box-width:500px;
+  h1,h2,h3{
+    color:red;
+    margin-bottom: 2em;
+  }
+  width:$box-width ;
+  height: $box-width;
+  background-color: #cccccc;
+  margin-left: 19px;
+  @include rounded-corners;   // 引用复用的样式
+}
+.container>h1{ font-size: 14px; } // 选择的是子元素
+h1~h2{ font-size: 17px;}          // 选择的是同层的元素
+.error{ border: 1px solid red; }
+ul {
+  color: #444;
+  @include no-bullets;
+  @extend .error;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+@import "resent.css"; // 采用原生css中的 @import 也可以是@import url() 在线的库
+@import "setHeight";  // less内部的 @import
+
+// 使用
+.wrap{
+  border: $linghe-color-border;
+  width: $width_2;
+  height: $height_2;
+
+  .inner{
+    width:$width_1;
+    height: $height_1;
+    border: $linghe-color-border;
+  }
+  .small{
+     border: $linghe-color-border;
+     width:$width_0;
+     height:$height_0;
+  }
+  .ahove{
+     color:#ccc;
+     //&:hover{ color:red; } //  父标签
+     //@include link-colors(blue, red, green);
+     // 传递参数的情况
+     @include link-colors(
+            $normal: blue,
+            $visited: green,
+            $hover: red
+     );
+  }
+}
+
+// 群组选择器的嵌套
+.container{
+  $box-width:500px;
+  h1,h2,h3{
+    color:red;
+    margin-bottom: 2em;
+  }
+  width:$box-width ;
+  height: $box-width;
+  background-color: #cccccc;
+  margin-left: 19px;
+  @include rounded-corners;   // 引用复用的样式
+}
+.container>h1{ font-size: 14px; } // 选择的是子元素
+h1~h2{ font-size: 17px;}          // 选择的是同层的元素
+.error{ border: 1px solid red; }
+ul {
+  color: #444;
+  @include no-bullets;
+  @extend .error;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
