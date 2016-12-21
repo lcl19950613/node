@@ -1,0 +1,24 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import 'compass/css3';
+@import "compass/typography";
+
+$supported-browsers: chrome,firefox,ie; // 指定需要的是那些浏览器
+$browser-mininum-version:('ie':'8');
+.test{ color:green; font-size:24px; line-height: 26px; }
+.shobox{
+   @include box-shadow(1px 1px 1px 1px #c0c0c0);
+}
+//@debug  browsers();
+a{
+   //@include hover-link();    // undeline
+   //@include link-colors(#00c,#0cc,#c0c,#ccc,#cc0); //只有第一个是必须值
+   //@include unstyled-link(); // 磨平a连接变成跟文本一样的
+}
+.list-unstyled{
+   //@include no-bullets();     // 去掉li 小点
+}
