@@ -18,4 +18,4 @@ var UserSchema = new Schema({
 /**
  * 定义的user的schema生成一个User的model并导出
  */
-module.exports = mongoose.model('User',UserSchema);
+module.exports = mongoose.model('User',UserSchema); // 表名称== collection 集合的名称
