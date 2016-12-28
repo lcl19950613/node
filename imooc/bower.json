@@ -1,0 +1,24 @@
+{
+  "name": "movie",
+  "authors": [
+    "anikin"
+  ],
+  "description": "about movie website in imooc",
+  "main": "",
+  "keywords": [
+    "movie"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": { //依赖的前端框架
+    "bootstrap": "^3.3.7"
+  }
+}
