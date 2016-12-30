@@ -1,0 +1,18 @@
+extends ../layout
+
+// 首页是一个电影列表，会传入一个数组，因此需要将这个数组进行遍历
+
+block content
+  .container
+    .row
+      each item in movies
+        .col-md-2
+          .thumbnail
+            a(href="/movie/#{item._id}")
+              img(src="#{item.poster}",alt="#{item.title}" )
+            .caption
+              h3 #{item.title}
+              p: a.btn.btn-primary(href="/movie/#{item._id}") 观看影片
+
+
+
